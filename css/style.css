@@ -1,14 +1,17 @@
-header{
-    background-color: #93B5ED ;
-    height: 230px;
-    text-align: center;
+.cover{
+    height: 400px;
+    background-image: url(../img/markus-spiske-iar-afB0QQw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+img{
+    margin-top: 10px;
+    margin-left: 530px;
+    border-radius: 100%;
+    width: 380px;
+    height: 380px;
 }
 
-#ironman{
-    width: 100px;
-    height: 147px;
-    margin-top: 25px;
-}
 
 h1{
     color: #4b0908;
@@ -41,7 +44,7 @@ h2{
     letter-spacing: 8px;
 }
 
-div{
+section{
     margin-top: 150px;
     margin-right: 225px;
     margin-bottom: 150px;
