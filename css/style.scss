@@ -114,13 +114,13 @@ main{
 
 .sub{
     &-design::before{
-        content: url('../img/design_services_black_24dp.svg');
+        content: url('/img/design_services_black_24dp.svg');
     }
     &-dev::before{
-        content: url('../img/code_black_24dp.svg');
+        content: url('/img/code_black_24dp.svg');
     }
     &-maint::before{
-        content: url('../img/settings_suggest_black_24dp.svg');
+        content: url('/img/settings_suggest_black_24dp.svg');
     }
 }
 .tools{
@@ -156,7 +156,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../img/web-developer-banner.png');
+        background-image: url('/img/web-developer-banner.png');
         background-position: center;
         min-height: calc(30vh);
         .port-works{
