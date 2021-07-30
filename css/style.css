@@ -43,7 +43,7 @@ main h2 {
 
 .fa-chevron-down {
   position: absolute;
-  top: 680px;
+  top: 600px;
   -webkit-animation: slide 0.9s infinite linear;
           animation: slide 0.9s infinite linear;
 }
@@ -173,15 +173,15 @@ main h2 {
 }
 
 .sub-design::before {
-  content: url(/img/design_services_black_24dp.svg);
+  content: url(../img/design_services_black_24dp.svg);
 }
 
 .sub-dev::before {
-  content: url(/img/code_black_24dp.svg);
+  content: url(../img/code_black_24dp.svg);
 }
 
 .sub-maint::before {
-  content: url(/img/settings_suggest_black_24dp.svg);
+  content: url(../img/settings_suggest_black_24dp.svg);
 }
 
 .tools {
@@ -241,7 +241,7 @@ main h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/web-developer-banner.png);
+  background-image: url("https://justresults.co.nz/wp-content/uploads/2015/10/web-developer-banner.png");
   background-position: center;
   min-height: calc(30vh);
 }
@@ -291,6 +291,8 @@ main h2 {
 .works .block .pag-cards {
   width: 49vw;
   min-width: 320px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 footer {
