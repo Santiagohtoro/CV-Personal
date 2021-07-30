@@ -1,0 +1,287 @@
+@import "_config.scss";
+*{
+    font-family: $font;
+    margin: 0;
+}
+
+/*pagina principal*/
+main, .sec-about, .sec-skills, .tools{
+    min-height: calc(100vh - 40px);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primarycolor;
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: $bold;
+        color: $subtitlecolor;
+    }
+    h2{
+        color: $letterscolor;
+        font-size: 1.5rem;
+        font-weight: $ligth;
+    }
+}
+.fa-chevron-down{
+    position: absolute;
+    top: 680px;
+    animation: slide 0.9s infinite linear;
+}
+
+@keyframes slide{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(0, 10px);
+    }
+}
+
+.symbol{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .line{
+        height: 2px;
+        width: 50px;
+        background-color: $secondarycolor;
+    }
+}
+
+.fab, .fas{
+        color: white;
+        font-size: 30px;
+}
+
+/*sobre mi*/
+.general{
+    background: $gradient;
+    padding: 0 25%;
+}
+
+.sec-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-me{
+        margin: 20% 0 5% 0;
+        border: 10px solid $primarycolor;
+        font-size: 2rem;
+        font-weight: $bold;
+        letter-spacing: 0.5rem;
+        padding: 10px 60px;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .btn-more{
+        border-left: 4px solid $primarycolor;
+        border-right: 4px solid $primarycolor;
+        font-size: 1rem;
+        font-weight: $bold;
+        margin: 30px;
+        padding: 5px 20px;
+    }
+}
+
+/*habilidades*/
+.sec-skills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10%;
+    background: $gradient;
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        .sub{
+            font-size: 2rem;
+            font-weight: $bold;
+            color: $primarycolor;
+        }
+        .skills-descrip{
+            font-size: 1rem;
+            text-align: justify;
+        }
+    }
+}
+
+.sub{
+    &-design::before{
+        content: url(/img/design_services_black_24dp.svg);
+    }
+    &-dev::before{
+        content: url(/img/code_black_24dp.svg);
+    }
+    &-maint::before{
+        content: url(/img/settings_suggest_black_24dp.svg);
+    }
+}
+.tools{
+    background: $gradient;
+    .sub-proggr{
+        display: flex;
+        justify-content: center;
+        .proggr-lang{
+            border: 10px solid $primarycolor;
+            font-size: 2rem;
+            font-weight: $bold;
+            letter-spacing: 0.5rem;
+            padding: 10px 0px;
+            text-align: center;
+            width: 250px;
+        }
+    }
+    .icons{
+        margin-top: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .icon{
+            height: 100px;
+        }
+    }
+}
+
+.portfolio{
+    background-color: $gradient;
+    .banner-port{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/web-developer-banner.png);
+        background-position: center;
+        min-height: calc(30vh);
+        .port-works{
+            border: 10px solid $secondarycolor;
+            font-size: 2rem;
+            color: $secondarycolor;
+            font-weight: $bold;
+            letter-spacing: 0.5rem;
+            padding: 10px 0px;
+            text-align: center;
+            width: 290px;
+            height: 50px;
+        }
+    }
+}
+.works{
+    background: $gradient;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .block{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        .pag-cards{
+            width: 49vw;
+            min-width: 320px;
+        }
+    }
+}
+
+footer{
+    background: $primarycolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    p{
+        color: $letterscolor;
+    }
+    label{
+        color: $letterscolor;
+        margin-bottom: 20px;
+    }
+    #return{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+.fa-angle-double-up:hover{
+    color:darkcyan;
+}
+
+.fa-angle-double-up{
+    margin-bottom: 20px;
+    animation: upper 1s infinite linear;
+}
+
+@keyframes upper{
+    0%{
+        transform: translate(0, 10px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+
+/*Menu Hamburguesa*/
+nav{
+    input:checked ~ ul{
+        display: block;
+    }
+    input{
+        display: none;
+    }
+    ul{
+        display: none;
+    } 
+}
+
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 53px;
+    background-color: $primarycolor ;
+    i{
+        padding: 15px;
+    }
+    label{
+        top: 5px;
+        right: 10px;
+        position: absolute;
+        border: 2px solid $letterscolor;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: 900;
+        text-align: center;
+        user-select: none;
+        color: $letterscolor;
+    }
+    .nav-elements{
+        color: $secondarycolor;
+        background-color: $primarycolor;
+        opacity: 80%;
+        font-family: $font;
+        font-weight: bold;
+        position: relative;
+        top: 53px;
+        right: 110px;
+        margin: 0;
+        padding: 10px 0px;
+        text-align: center;
+        list-style: none;
+        border-bottom: 1px solid $letterscolor ;
+        width: 100vw;
+    }
+}
+

@@ -5,42 +5,117 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
         <title>Curriculum vitae</title>
     </head>
     <body>
         <header>
-            <div class="cover">
-                <img id="foto" src="./img/hoja-removebg (1).png">
-            </div>
+            <nav class="nav-bar">
+                <i class="fas fa-terminal"></i>
+                <input type="checkbox" id="main">
+                <label for="main" id="icon"> ☰ </label>
+                <ul type="none" class="op-list">
+                    <li class="nav-elements"><a href="#about-me">Sobre mi</a></li>
+                    <li class="nav-elements"><a href="#skills">Habilidades</a></li>
+                    <li class="nav-elements"><a href="#tools">Herramientas</a></li>
+                    <li class="nav-elements"><a href="#portfolio">Portafolio</a></li>
+                </ul>
+            </nav>
         </header>
-        <section>
-            <h2> DATOS PERSONALES</h2>
-            <ul class="informacion">
-                <li><span id="title-dif">Nombre completo:</span> Anthony Edward Stark</li>
-                <li><span id="title-dif">Fecha de nacimiento:</span> 01/03/1963</li>
-                <li><span id="title-dif">Lugar de nacimiento:</span> Sofía, Bulgaria</li>
-            </ul>
-        
-            <h2> FORMACION ACADEMICA</h2>
-            <ul type="none">
-                <li><span>1963-1968:</span> Instituto Tecnológico de Massachusetts <br> Ingeniería mecánica</li>
+        <main class="ppl-page" id="home">
+            <h1>Mi nombre es Santiago</h1>
+            <h2 class="title-main">SOY DESARROLLADOR</h2>
+            <div class="symbol">
+                <div class="line"></div>
+                <p id="slash">\/</p>
+                <div class="line"></div>
+            </div>
+            <div class="network-icon">
+                <a class="email" href="mailto:agosantihernandez@outlook.com"><i class="fas fa-at"></i></a>
+                <a href="https://github.com/sht24"><i class="fab fa-github"></i></a>
+                <a href="tel:3024696854"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <i class="fas fa-chevron-down"></i>
+        </main>
+        <section class="general">
+            <div class="sec-about" id="about-me">
+                <h2 class="about-me">SOBRE MI</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus a animi dignissimos dolore ullam molestiae quidem, consequatur illum explicabo non autem minus ad distinctio. Quibusdam perspiciatis consequuntur inventore blanditiis?
+                Modi, accusamus.  corrupti aliquam minima facere quia pariatur, laboriosam deserunt facilis. Assumenda blanditiis quis ad ullam. </p>
                 <br>
-                <li><span>1968-1970:</span> Instituto Tecnológico de Massachusetts <br> Maestría en ingeniería eléctrica y física</li>
-            </ul>
-        
-            <h2> EXPERIENCIA LABORAL</h2>
-            <ul type="none">
-                <li><span>1970-2016:</span> Industrias Stark <br> Jefe, millonario y empresario</li>
-                <br>
-                <li><span>1980-2016:</span>  S.H.I.E.L.D. <br> Maestrías en ingeniería eléctrica y física</li>
-                <br>
-                <li><span>2000-2016:</span> The Avengers <br> Combate villanos con otros superhéroes</li>
-            </ul>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus a animi dignissimos dolore ullam molestiae quidem, consequatur illum explicabo non autem minus ad distinctio. Quibusdam perspiciatis consequuntur inventore blanditiis?
+                Modi, accusamus.  corrupti aliquam minima facere quia pariatur, laboriosam deserunt facilis. Assumenda blanditiis quis ad ullam. </p>
+                <div class="btn-more">VER MAS</div>
+            </div>
+            <div class="symbol">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </section>
-        <footer>
-            <span class="name">0810 - TONY STARK</span>
-            <a href="https://www.instagram.com/ironman.official/"><img id="redes" src="./img/instagram.png"></a>
-            <a href="https://www.linkedin.com/in/tony-stark-37599389"><img id="redes" src="./img/linkedin.png"></a>
-        </footer>
+            <div class="sec-skills" id="skills">
+                <div class="section">
+                    <h3 class="sub-design">Diseño</h3>
+                    <p class="skills-descrip">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero ab ea corporis? Tempora molestias omnis voluptatum delectus enim eaque non ipsa quo vero
+                    </p>
+                    <br>
+                </div>
+                <div class="section">
+                    <h3 class="sub-dev">Programacion</h3>
+                    <p class="skills-descrip">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero ab ea corporis? Tempora molestias omnis voluptatum delectus enim eaque non ipsa quo vero
+                    </p>
+                    <br>
+                </div>
+                <div class="section">
+                    <h3 class="sub-maint">Mantenimiento</h3>
+                    <p class="skills-descrip">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus libero ab ea corporis? Tempora molestias omnis voluptatum delectus enim eaque non ipsa quo vero
+                    </p>
+                </div>
+            </div>
+            <section class="tools" id="tools">
+                <div class="symbol">
+                    <div class="line"></div>
+                    <p id="slash">\/</p>
+                    <div class="line"></div>
+                </div>
+                <div class="sub-proggr">
+                    <h2 class="proggr-lang">SKILLS</h2>
+                </div>
+                <div class="icons">
+                    <img src="./img/icons8-html-5.svg" class="icon-html">
+                    <img src="./img/icons8-css3.svg" class="icon-css">
+                    <img src="./img/icons8-sass.svg" class="icon-sass">
+                    <img src="./img/icons8-git.svg" class="icon-git">
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="banner-port">
+                    <h2 class="port-works" id="portfolio">DISEÑOS</h2>
+                </div>
+                <div class="works">
+                    <div class="block">
+                        <a href="https://sht24.github.io/CardsDC-adaptables/"><img class="pag-cards" src="./img/Captura web_29-7-2021_225757_sht24.github.io.jpeg" alt=""></a>
+                        <a href="https://sht24.github.io/petshop-responsive_design/"><img class="pag-cards" src="./img/Captura web_30-7-2021_098_sht24.github.io.jpeg" alt=""></a>
+                    </div>
+                    <div class="block">
+                        <a href="https://sht24.github.io/Frontend1/"><img class="pag-cards" src="./img/Captura web_30-7-2021_02057_sht24.github.io.jpeg" alt=""></a>
+                        <a href="https://sht24.github.io/pizza_front/"><img class="pag-cards" src="./img/Captura web_30-7-2021_01838_sht24.github.io.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <a href="#home" id="return"><i class="fas fa-angle-double-up"></i>
+                <label for="return">Ir al inicio</label></a>
+                
+                <div class="social-med">
+                    <!--logos-->
+                    <a class="email" href="mailto:agosantihernandez@outlook.com"><i class="fas fa-at"></i></a>
+                    <a href="https://github.com/sht24"><i class="fab fa-github"></i></a>
+                    <a href="tel:3024696854"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>By: Santiago H. 2021</p>
+            </footer>
     </body>
 </html>
